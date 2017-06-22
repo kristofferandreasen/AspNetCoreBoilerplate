@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "FAQ";
+}
+
+<div id="faq_page">
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+
+                    <h1>Create a FAQ</h1>
+
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of page header -->
+<div class="lightgrey_background">   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+
+                    <!-- Import FAQ Section -->
+                    @await Html.PartialAsync("Sections/_FaqSection")
+
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>

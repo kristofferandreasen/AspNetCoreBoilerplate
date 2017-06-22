@@ -1,0 +1,75 @@
+@model IEnumerable<aspnetcorestarter.Models.Item>
+
+@{
+    ViewData["Title"] = "Display Data";
+}
+
+<div id="http_page">
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+                        
+                    <h1>Display Data from a service</h1>
+
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of page header -->
+
+<div class="lightgrey_background">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                            <div class="breaksection"></div>
+
+                            <!-- Start of table with dynamic data -->
+                            <div class="card">
+                                <div class="header">
+                                    <h2>Basic Table</h2>
+                                    <p>Add some text to your table.</p>
+                                </div>
+                                <div class="table-responsive">          
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Name</th>
+                                            <th>Price</th>
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td>@Html.DisplayFor(modelItem => item.ItemId)</td>
+                                                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                                <td>@Html.DisplayFor(modelItem => item.Price)</td>
+                                                <td><a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">Edit</a></td>
+                                            </tr>
+                                        }
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- / End of table -->
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+
+</div>

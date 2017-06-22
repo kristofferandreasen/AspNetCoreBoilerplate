@@ -1,0 +1,34 @@
+@{
+    ViewData["Title"] = "Pricing";
+}
+
+<!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="site-heading">
+
+                        <div class="breaksection"></div>
+
+                        <h1>Pricing</h1>
+                        <h2>Check our awesome prices</h2>
+
+                        <div class="breaksection"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End of page header -->
+
+    <!-- Import Options Cards Component -->
+    @await Html.PartialAsync("Sections/_OptionsSection")
+
+    <!-- Import FAQ Section Component -->
+    @await Html.PartialAsync("Sections/_FaqSection")
+
+    <!-- Import Modal Component -->
+    @await Html.PartialAsync("Components/_Modal")
