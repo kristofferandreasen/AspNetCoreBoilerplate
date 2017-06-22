@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using AspNetCoreBoilerplate.Models;
 
 namespace AspNetCoreBoilerplate
 {
@@ -28,25 +29,18 @@ namespace AspNetCoreBoilerplate
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
-            // This is where the repository is added as a service
-            // MockItemRepository is the concrete implementation
-            // services.AddTransient<IItemRepository, MockItemRepository>();
-
-            // The real database repository is added as a service
-            // services.AddTransient<IItemRepository, ItemRepository>();
-            
+        { 
             // Add framework services.
             // The AddMvc adds the features from the regular MVC Framework
             services.AddMvc();
 
             // This section adds the database context using the default connection from the appsettings.json file
-            // services.AddDbContext<AppDbContext>(options =>
-               // options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AppDbContext>(options =>
+               options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, AppDbContext context)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -61,7 +55,7 @@ namespace AspNetCoreBoilerplate
                 app.UseBrowserLink();
 
                 // Seed the database with the inital data
-                // DbInitializer.Seed(context);
+                DbInitializer.Seed(context);
             }
             else
             {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using AspNetCoreBoilerplate.Models;
 
 namespace AspNetCoreBoilerplate.Controllers
 {
@@ -20,8 +21,6 @@ namespace AspNetCoreBoilerplate.Controllers
 
        public IActionResult HttpData()
        {
-            // The Items from the Mock data is returned to the view
-            // return View(_itemRepository.Items);
 
             return View(_context.Items.ToList());
         }
