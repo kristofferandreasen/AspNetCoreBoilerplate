@@ -12,7 +12,7 @@
 
                     <div class="breaksection"></div>
                         
-                    <h1>Different Modals for your site</h1>
+                    <h1>Modals</h1>
                     <h2>Prompt the users with the right choices.</h2>
 
                     <div class="breaksection"></div>
@@ -23,12 +23,36 @@
 </header>
 <!-- End of page header -->
 
+<!-- Component Section -->
 <div class="lightgrey_background">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
 
-                <div class="breaksection"></div>
+                <!-- Simple Modal Section -->
+                <div id="modal_section">
+                    <div class="container"> 
+                        <div class="row">
+                                <div class="col-md-12">
+                                
+                                <div class="text-center">
+
+                                    <!-- Modal Header visible on the page -->
+                                    <h3 class="subheader blue">Simple Modal Example</h3>
+
+                                    <!-- Trigger/Open The Modal -->
+                                    <button class="btn__solid_green" id="my_Simple_Modal_Btn">Open Simple Modal</button>
+
+                                </div>
+
+                                <!-- Import Simple Modal Component -->
+                                @await Html.PartialAsync("Components/_ModalSimpleComponent")
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Simple Modal Section -->
 
                 <!-- Modal Section -->
                 <div id="modal_section">
@@ -61,7 +85,7 @@
         </div>
     </div>
 </div>
-
-    
+<!-- / Component Section -->
 
 </div>
+<!-- / Modal Page -->

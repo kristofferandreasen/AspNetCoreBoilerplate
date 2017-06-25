@@ -1,22 +1,26 @@
 <!-- The Simple Modal -->
-<div id="mySimpleModal" class="simple_modal">
-    <div class="modal-content">
-        <div class="row center_row">
-
-            <!-- The Exit Icon -->
-            <span class="close">&times;</span>
+<div id="mySimpleModal" class="modal">
+    <div class="simple_modal_content">
+        <div class="row text-center">
 
             <!-- Column -->
             <div class="col-md-12">
                 <div class="modal_padding">
 
+                    <!-- The Exit Icon -->
+                    <span class="simple_close">&times;</span>
+
                     <!-- Large Icon / Image -->
-                    <img class="modal_image_padding" src="@Url.Content("~/images/icons/student.png")" alt="">
+                    <img class="simple_modal_image_padding" src="@Url.Content("~/images/space.png")" alt="">
 
                     <!-- Centered Content -->
                     <h5>Your Modal Message</h5>
                     <p>The text could describe what you are selling or offering.</p>
+
                     <a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">CTA Button</a>
+
+                    <br>
+                    <br>
 
                 </div>  
             </div>

@@ -925,12 +925,13 @@ input {
 /* ----------------------------------------------------------------------------------------------------------- */
 
 
+/* This part only styles the modal page and not the component */
 #modal_section {
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #F9F9F9;
-    border-top: 1px solid #E8E8E8;
 }
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -992,13 +993,6 @@ input {
 /*----------- Simple Modal */
 /* ----------------------------------------------------------------------------------------------------------- */
 
-
-#modal_section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #F9F9F9;
-    border-top: 1px solid #E8E8E8;
-}
 /* The Modal (background) */
 .simple_modal {
     display: none; /* Hidden by default */
@@ -1015,31 +1009,46 @@ input {
 .modal_padding {
     padding: 25px;
 }
-.modal_image_padding {
-  margin-top: 100px;
-  margin-bottom: 100px;
+#mySimpleModal img {
+  max-height: 200px;
+  width: auto;
+}
+.simple_modal_image_padding {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* Modal Content/Box */
-.modal-content {
+.simple_modal_content {
     background-color: #fefefe;
     margin: 7% auto;
     border: 1px solid #888;
-    width: 50%;
+    width: 30%;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+
+/* Large size on mobile */
+@media only screen and (max-width: 900px) {
+    .simple_modal_content {
+    width: 90%;
+    }
 }
 
 /* The Close Button */
-.close {
+.simple_close {
     color: #666666;
     position: absolute;
-    right: 7px;
+    right: 22px;
+    top: -6px;
     font-size: 28px;
     font-weight: bold;
     z-index: 100;
 }
 
-.close:hover,
-.close:focus {
+.simple_close:hover,
+.simple_close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
