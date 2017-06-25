@@ -1,14 +1,14 @@
-![ASP.NET Core Starter](https://github.com/kristofferandreasen/aspnetcore-starter/blob/master/corestartertop.png)
+![ASP.NET Core Boilerplate](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/blob/master/corestartertop.png)
 
-# ASP.NET Core Starter Template
+# ASP.NET Core Boilerplate
 
 This template is created as a simple starter application for ASP.NET Core. The template uses no specific front end framework and focuses on providing a landing page for projects. It also contains simple backend method examples such as an HttpClient.
 
 ## Getting Started
 
 To begin using this template, choose one of the following options to get started:
-* [Download the latest release here](https://github.com/kristofferandreasen/aspnetcore-starter/archive/master.zip)
-* Clone the repo: `git clone https://github.com/kristofferandreasen/aspnetcore-starter.git`
+* [Download the latest release here](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/archive/master.zip)
+* Clone the repo: `git clone https://github.com/kristofferandreasen/AspNetCoreBoilerplate.git`
 * Fork the repo
 
 ## Project Structure
@@ -40,9 +40,16 @@ The project can be startet with dotnet commands from the command line.
 2. Run `dotnet build` to build the solution.
 3. To run the project in a browser, run `dotnet run` or use Visual Studio/VS Code.
 
+## Components
+The AspNetCoreBoilerplate does not just contain a simple boilerplate without styling. 
+We have included a large number of minimalism components.
+
+These include:
+* 
+
 ## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/kristofferandreasen/aspnetcore-starter/issues) here on Github.
+Have a bug or an issue with this template? [Open a new issue](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/issues) here on Github.
 
 ## Creator
 
@@ -52,4 +59,4 @@ The template was created by and is maintained by:
 
 ## Copyright and License
 
-Copyright 2017. Code released under the [MIT](https://github.com/kristofferandreasen/aspnetcore-starter/blob/master/LICENSE) license.
+Copyright 2017. Code released under the [MIT](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/blob/master/LICENSE) license.

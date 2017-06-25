@@ -1,57 +1,36 @@
-<!-- Card Section -->
-<div id="modal_section">
-    <div class="container"> 
-        <div class="row">
-                <div class="col-md-12">
-                
-                <div class="text-center">
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="row center_row">
 
-                    <!-- Modal Header visible on the page -->
-                    <h3 class="subheader blue">Modal Example</h3>
+            <!-- The Exit Icon -->
+            <span class="close">&times;</span>
 
-                    <!-- Trigger/Open The Modal -->
-                    <button class="btn__solid_green" id="myBtn">Open Modal</button>
+            <!-- Column -->
+            <div class="col-md-6 modal_min_height center">
+                <div class="modal_padding">
 
-                </div>
+                    <!-- Corner Image -->
+                    <img class="modal_image" src="@Url.Content("~/images/icons/auto1.png")" alt="">
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <div class="row center_row">
-
-                            <!-- The Exit Icon -->
-                            <span class="close">&times;</span>
-
-                            <!-- Column -->
-                            <div class="col-md-6 modal_min_height center">
-                                <div class="modal_padding">
-
-                                    <!-- Corner Image -->
-                                    <img class="modal_image" src="@Url.Content("~/images/icons/auto1.png")" alt="">
-
-                                        <!-- Centered Content -->
-                                        <h5>Your Modal Message</h5>
-                                        <p>The text could describe what you are selling or offering.</p>
-                                        <a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">CTA Button</a>
-                                </div>  
-                            </div>
-                            <!-- / Column -->
-
-                            <!-- Column -->
-                            <div class="col-md-6 lightgrey_background text-center nopadding modal_min_height center">
-                                <div class="modal_padding">
-
-                                        <img class="modal_image_padding" src="@Url.Content("~/images/icons/student.png")" alt="">
-                                </div>
-                            </div>
-                            <!-- / Column -->
-
-                        </div>
-                    </div>
-                </div>
-                <!-- / Modal -->
-
+                        <!-- Centered Content -->
+                        <h5>Your Modal Message</h5>
+                        <p>The text could describe what you are selling or offering.</p>
+                        <a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">CTA Button</a>
+                </div>  
             </div>
+            <!-- / Column -->
+
+            <!-- Column -->
+            <div class="col-md-6 lightgrey_background text-center nopadding modal_min_height center">
+                <div class="modal_padding">
+
+                        <img class="modal_image_padding" src="@Url.Content("~/images/icons/student.png")" alt="">
+                </div>
+            </div>
+            <!-- / Column -->
+
         </div>
     </div>
 </div>
+<!-- / Modal -->

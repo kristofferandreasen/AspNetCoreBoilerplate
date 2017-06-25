@@ -2,50 +2,49 @@
     ViewData["Title"] = "Home Page";
 }
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-12">
-                    <div class="site-heading">
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <div class="site-heading">
 
-                        <div class="breaksection"></div>
+                    <div class="breaksection"></div>
 
-                        <h1>Get Started</h1>
-                        <h2>A flexible .NET Core 1.1.1 Template</h2>
+                    <h1>Get Started</h1>
+                    <h2>A flexible .NET Core 1.1.1 Template</h2>
 
-                        <br>
+                    <br>
 
-                        <ul class="list-inline">
-                            <li>
-                                <a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">Read More</a>
-                            </li>
-                            <li>
-                                <a class="btn__line" target="_blank" href="https://github.com/kristofferandreasen/AspNetCoreBoilerplate">Source Code</a>
-                            </li>
-                        </ul>
+                    <ul class="list-inline">
+                        <li>
+                            <a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">Read More</a>
+                        </li>
+                        <li>
+                            <a class="btn__line" target="_blank" href="https://github.com/kristofferandreasen/AspNetCoreBoilerplate">Source Code</a>
+                        </li>
+                    </ul>
 
-                        <br>
+                    <br>
 
-                        <img class="img-responsive" src="@Url.Content("~/images/browsertop.png")" alt="">
+                    <img class="img-responsive" src="@Url.Content("~/images/browsertop.png")" alt="">
 
-                    </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- End of page header --> 
+    </div>
+</header>
+<!-- End of page header --> 
 
-    <!-- Import Icon Section -->
-    @await Html.PartialAsync("Sections/_IconSection")
+<!-- Import Icon Section -->
+@await Html.PartialAsync("Sections/_IconSection")
 
-    <!-- Import Image Section -->
-    @await Html.PartialAsync("Sections/_ImageSection")
+<!-- Import Image Section -->
+@await Html.PartialAsync("Sections/_ImageSection")
 
-    <!-- Import Image component -->
-    @await Html.PartialAsync("Sections/_LargeImageSection")
+<!-- Import Image component -->
+@await Html.PartialAsync("Sections/_LargeImageSection")
 
-    <!-- Import CTA component -->
-    @await Html.PartialAsync("Sections/_CtaSection")
+<!-- Import CTA component -->
+@await Html.PartialAsync("Sections/_CtaSection")
     

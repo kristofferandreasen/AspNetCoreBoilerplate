@@ -5,7 +5,6 @@
 <div id="modal_page">
 
 <!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
 <header class="intro-header">
     <div class="container">
         <div class="row text-center">
@@ -14,6 +13,7 @@
                     <div class="breaksection"></div>
                         
                     <h1>Different Modals for your site</h1>
+                    <h2>Prompt the users with the right choices.</h2>
 
                     <div class="breaksection"></div>
 
@@ -30,11 +30,32 @@
 
                 <div class="breaksection"></div>
 
-                <!-- Import Modal Component -->
-                @await Html.PartialAsync("Components/_ModalComponent")
+                <!-- Modal Section -->
+                <div id="modal_section">
+                    <div class="container"> 
+                        <div class="row">
+                                <div class="col-md-12">
+                                
+                                <div class="text-center">
+
+                                    <!-- Modal Header visible on the page -->
+                                    <h3 class="subheader blue">Modal Example</h3>
+
+                                    <!-- Trigger/Open The Modal -->
+                                    <button class="btn__solid_green" id="myBtn">Open Modal</button>
+
+                                </div>
+
+                                <!-- Import Modal Component -->
+                                @await Html.PartialAsync("Components/_ModalComponent")
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- / Modal Section -->
 
                 <div class="breaksection"></div>
-
 
             </div>
         </div>
