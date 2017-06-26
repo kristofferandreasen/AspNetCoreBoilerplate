@@ -18,7 +18,7 @@
 
                     <ul class="list-inline">
                         <li>
-                            <a class="btn__solid" asp-area="" asp-controller="Home" asp-action="Index">Read More</a>
+                            <a class="btn__solid_green" asp-area="" asp-controller="Home" asp-action="Index">Read More</a>
                         </li>
                         <li>
                             <a class="btn__line" target="_blank" href="https://github.com/kristofferandreasen/AspNetCoreBoilerplate">Source Code</a>
@@ -44,6 +44,9 @@
 
 <!-- Import Image component -->
 @await Html.PartialAsync("Sections/_LargeImageSection")
+
+<!-- Import Feature Section -->
+@await Html.PartialAsync("Sections/_FeatureSection")
 
 <!-- Import CTA component -->
 @await Html.PartialAsync("Sections/_CtaSection")

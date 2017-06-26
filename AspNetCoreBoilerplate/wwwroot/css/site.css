@@ -47,7 +47,7 @@
 *     Blue:         #5091bd
 *     Green:        #24b47e
 *     Turqoise:     #8AD6D0
-*     Purple:       #6772e5
+*     Purple:       #6973DB
 *     Yellow:       #FFE164
 *     Black:        #555459
 *     Almost Black: #666666
@@ -113,6 +113,11 @@ body a:hover {
 .breaksection {
   height: 100px;
 }
+@media only screen and (max-width: 768px) {
+  .breaksection {
+    height: 50px;
+  }
+}
 .nopadding {
   padding: 0 !important;
 }
@@ -164,9 +169,11 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.1;
-    font-weight: 800;
+    font-weight: 600;
+    color: #666666;
+    margin-bottom: 20px;
     letter-spacing: -0.028em;
 }
 
@@ -192,7 +199,7 @@ h6 {
 }
 .subtitle {
     font-size: 12px;
-    color: #999;
+    color: #6973DB;
     font-weight: 700;
     letter-spacing: .8px;
     margin-top: 0;
@@ -218,38 +225,6 @@ h6 {
 /* ----------------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------------------------------------------------------------------- */
 
-.btn__solid {
-    border: 0;
-    border-radius: 4px;
-    padding: 10px 20px 10px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 700;
-    background-color: #42c299;
-    color: #fff;
-    text-shadow: none;
-    text-transform: uppercase;
-    transition-property: background-color,border-color,color,box-shadow,filter;
-    transition-duration: .3s;
-}
-.btn__solid:hover {
-    border: 0;
-    border-radius: 4px;
-    padding: 10px 20px 10px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 13px;
-    font-weight: 700;
-    background-color: #42c299;
-    color: #fff;
-    text-shadow: none;
-    text-transform: uppercase;
-    transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-    transition-property: background-color,border-color,color,box-shadow,filter;
-    transition-duration: .3s;
-}
 .btn__solid_green {
     border: 0;
     border-radius: 4px;
@@ -275,6 +250,40 @@ h6 {
     font-size: 13px;
     font-weight: 700;
     background-color: #8AD6D0;
+    color: #fff;
+    text-shadow: none;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+}
+.btn__solid_purple {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #6973DB;
+    color: #fff;
+    text-shadow: none;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+}
+.btn__solid_purple:hover {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px 20px 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #6973DB;
     color: #fff;
     text-shadow: none;
     text-transform: uppercase;
