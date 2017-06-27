@@ -26,8 +26,18 @@
 <!-- Component Section -->
 <div class="lightgrey_background">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="row text-center">
+            <div class="col-md-6 col-md-offset-3">
+
+                <div class="breaksection"></div>
+
+                <!-- Import Form Component -->
+                @await Html.PartialAsync("Components/_SimpleFormComponent")
+
+                <div class="breaksection"></div>
+
+                <!-- Import Form Component -->
+                @await Html.PartialAsync("Components/_MinimalFormComponent")
 
                 <div class="breaksection"></div>
 

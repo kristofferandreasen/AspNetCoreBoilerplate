@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"] = "Large Icons";
+}
+
+<div id="large_icon_page">
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+
+                    <h1>A big section with all your features</h1>
+                    <h2>Showcase everything you got in store</h2>
+
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of page header -->
+
+<!-- Component Section -->
+<div class="lightgrey_background">   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+
+                    <!-- Import Icon Section -->
+                    @await Html.PartialAsync("Sections/_LargeIconSection")
+
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Component Section -->
+
+</div>
+<!-- / Large Icon Page -->

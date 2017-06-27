@@ -87,6 +87,13 @@ namespace AspNetCoreBoilerplate.Controllers
             return View();
         }
 
+        public IActionResult LargeIcons()
+        {
+            ViewData["Message"] = "Icons.";
+
+            return View();
+        }
+
         public IActionResult Faq()
         {
             ViewData["Message"] = "Icons.";

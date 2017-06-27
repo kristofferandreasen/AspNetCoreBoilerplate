@@ -18,7 +18,7 @@
 
                     <ul class="list-inline">
                         <li>
-                            <a class="btn__solid_green" asp-area="" asp-controller="Home" asp-action="Index">Read More</a>
+                            <a id="scrollBtn" class="btn__solid_green" href="#large_icon_section">Read More</a>
                         </li>
                         <li>
                             <a class="btn__line" target="_blank" href="https://github.com/kristofferandreasen/AspNetCoreBoilerplate">Source Code</a>
@@ -36,8 +36,12 @@
 </header>
 <!-- End of page header --> 
 
+<div class="breaksection"></div>
+
 <!-- Import Icon Section -->
-@await Html.PartialAsync("Sections/_IconSection")
+@await Html.PartialAsync("Sections/_LargeIconSection")
+
+<div class="breaksection"></div>
 
 <!-- Import Image Section -->
 @await Html.PartialAsync("Sections/_ImageSection")
