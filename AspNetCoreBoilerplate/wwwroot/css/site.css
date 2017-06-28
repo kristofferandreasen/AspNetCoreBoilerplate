@@ -92,6 +92,14 @@ body a:hover {
   color: #5091bd;
 }
 
+/* Border classes to add to elements for a simple border */
+.topborder {
+  border-top: 1px solid #E8E8E8;
+}
+.bottomborder {
+  border-top: 1px solid #E8E8E8;
+}
+
 /* A card page that can always be used to wrap elements */
 .card {
   border-radius: 4px;
@@ -1223,6 +1231,48 @@ form {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #6772e5;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+/*----------- Testimonials Section */
+/*------------------------------------------------------------------------------------------------*/
+
+/* carousel */
+#quote-carousel {
+  text-align:center;
+  padding: 30px;
+  height: 300px;
+}
+@media only screen and (max-width: 768px) {
+  #quote-carousel {
+    text-align:center;
+    padding: 30px;
+    height: 400px;
+  }
+}
+/* Card */
+#quote-carousel .card {
+    background-color: #FFF;
+    border-radius: 10px;
+    margin:30px;
+    box-shadow: 0 10px 40px 0 rgba(62,57,107,0.07), 0 2px 9px 0 rgba(62,57,107,0.06);
+}
+/* carousel images */
+#quote-carousel .item .testimonial {
+  max-width: 150px;
+  height: auto;
+  border: 5px solid #E8E8E8;
+  margin-bottom: 20px;
+}
+#quote-carousel .quote-left {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+#quote-carousel .quote-right {
+  position: absolute;
+  right: 10px;
+  top: 10px;
 }
 
 /*------------------------------------------------------------------------------------------------*/

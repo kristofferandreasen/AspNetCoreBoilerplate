@@ -43,14 +43,27 @@
 
 <div class="breaksection"></div>
 
-<!-- Import Image Section -->
-@await Html.PartialAsync("Sections/_ImageSection")
+<!-- Image Section -->
+<div class="topborder">
+    @await Html.PartialAsync("Sections/_ImageSection")
+</div>
 
 <!-- Import Image component -->
 @await Html.PartialAsync("Sections/_LargeImageSection")
 
 <!-- Import Feature Section -->
 @await Html.PartialAsync("Sections/_FeatureSection")
+
+<!-- Testimonials Section -->
+<div class="row text-center topborder">
+    <div class="col-md-12">
+        <div class="breaksection"></div>
+        <h5 class="subtitle">Listen to the users</h5>
+        <h3>What are the customers saying?</h3>
+    </div>
+</div>
+
+@await Html.PartialAsync("Sections/_TestimonialsSection")
 
 <!-- Import CTA component -->
 @await Html.PartialAsync("Sections/_CtaSection")
