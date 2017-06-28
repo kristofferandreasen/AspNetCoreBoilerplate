@@ -1,0 +1,47 @@
+@{
+    ViewData["Title"] = "Testimonials";
+}
+
+<div id="testimonials_page">
+
+<!-- Page Header -->
+<header class="intro-header">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+
+                    <h1>Showcase your testimonials</h1>
+                    <h2>A slider with images</h2>
+
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</header>
+<!-- End of page header -->
+
+<!-- Component Section -->
+<div class="lightgrey_background">   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                    <div class="breaksection"></div>
+
+                    <!-- Import Table Component -->
+                    @await Html.PartialAsync("Sections/_TestimonialsSection")
+
+                    <div class="breaksection"></div>
+                    <div class="breaksection"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Component Section -->
+
+</div>
+<!-- / Table Page -->

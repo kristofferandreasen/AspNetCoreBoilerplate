@@ -9,7 +9,7 @@ namespace AspNetCoreBoilerplate.Controllers
    public class HomeController : Controller
     {
         // --------------------------------------------------------------------//
-        // Index View 
+        // INDEX VIEW
         // --------------------------------------------------------------------//
         public IActionResult Index()
         {
@@ -111,6 +111,13 @@ namespace AspNetCoreBoilerplate.Controllers
         public IActionResult Image()
         {
             ViewData["Message"] = "Image.";
+
+            return View();
+        }
+
+        public IActionResult Testimonials()
+        {
+            ViewData["Message"] = "Testimonials";
 
             return View();
         }
