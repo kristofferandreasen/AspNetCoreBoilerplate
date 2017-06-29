@@ -1,8 +1,8 @@
-![ASP.NET Core Boilerplate](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/blob/master/corestartertop.png)
-
 # ASP.NET Core Boilerplate
 
 [![Dependency Status](https://david-dm.org/boennemann/badges.svg)](https://david-dm.org/boennemann/badges) ![DotBadge](http://rebornix.qiniudn.com/dotbadge.svg)
+
+[PROJECT PAGE](http://aspnetcoreboilerplate.azurewebsites.net/)
 
 This template is created as a simple starter application for ASP.NET Core. The template uses no specific front end framework and focuses on providing a landing page for projects. It is created to allow developers to jumpstart their landing page projects or applications.
 
