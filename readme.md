@@ -4,6 +4,8 @@
 
 This template is created as a simple starter application for ASP.NET Core. The template uses no specific front end framework and focuses on providing a landing page for projects. It is created to allow developers to jumpstart their landing page projects or applications.
 
+![Starter GIF](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/blob/master/corestarter.gif)
+
 ## Getting Started
 
 To begin using this template, choose one of the following options to get started:
