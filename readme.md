@@ -74,7 +74,7 @@ These include:
 
 ## Icons
 All icons used in the template are open source. I suggest to support the original authors of the work.
-The primary icons used are 
+The primary icons used are Icons8, which you can find [here](https://icons8.com/).
 
 ## Bugs and Issues
 
