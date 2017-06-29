@@ -2,6 +2,8 @@
 
 # ASP.NET Core Boilerplate
 
+[![Dependency Status](https://david-dm.org/boennemann/badges.svg)](https://david-dm.org/boennemann/badges)
+
 This template is created as a simple starter application for ASP.NET Core. The template uses no specific front end framework and focuses on providing a landing page for projects. It is created to allow developers to jumpstart their landing page projects or applications.
 
 ![Starter GIF](https://github.com/kristofferandreasen/AspNetCoreBoilerplate/blob/master/corestarter.gif)
@@ -69,6 +71,10 @@ These include:
 * Options Section
 * Testimonials Section
 * Footer Section
+
+## Icons
+All icons used in the template are open source. I suggest to support the original authors of the work.
+The primary icons used are 
 
 ## Bugs and Issues
 
