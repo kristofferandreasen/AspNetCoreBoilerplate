@@ -40,6 +40,7 @@
 *     FAQ Section
 *     CTA Section
 *     Image Section
+*     Testimonials Section
 
 *     COLORS
 
@@ -1167,19 +1168,22 @@ form {
 }
 
 /*------------------------------------------------------------------------------------------------*/
-/*----------- Image Component Section */
+/*----------- Large Image Section */
 /*------------------------------------------------------------------------------------------------*/
 #image_component {
     border-bottom: 1px solid #E8E8E8;
+}
+#image_component .text_padding {
+  padding: 10px;
 }
 #image_component .vertical_align {
     display: flex;
     align-items: center;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   #image_component .vertical_align {
     display: block;
-}
+  }
 }
 #image_component .background_image {
   background: no-repeat center center;
@@ -1190,10 +1194,6 @@ form {
   -o-background-size: cover;
   background-image: url("../images/coffee.png");
   min-height: 500px;
-}
-#image_component .text_padding {
-  padding: 20px;
-  height: 15em;
 }
 
 /*------------------------------------------------------------------------------------------------*/
