@@ -2,7 +2,7 @@
 
 # ASP.NET Core Boilerplate
 
-This template is created as a simple starter application for ASP.NET Core. The template uses no specific front end framework and focuses on providing a landing page for projects. It also contains simple backend method examples such as an HttpClient.
+This template is created as a simple starter application for ASP.NET Core. The template uses no specific front end framework and focuses on providing a landing page for projects. It is created to allow developers to jumpstart their landing page projects or applications.
 
 ## Getting Started
 
@@ -13,6 +13,7 @@ To begin using this template, choose one of the following options to get started
 
 ## Project Structure
 
+The Web Project folder:
 ```
 .
  ├── .vscode                        # Visual Studio Code launch settings
@@ -22,15 +23,13 @@ To begin using this template, choose one of the following options to get started
  ├── Views                          # The Views
  ├── wwwroot                        # The static files of the project - CSS, JS, Images
  ├── .bowerrc                       # Specifies root directory
- ├── .gitignore                     # Specifies file to ignore with version control
+ ├── AspNetCoreBoilerplate.csproj   # csproj file with NuGet references
  ├── Program.cs                     # The generic Program.cs build file
  ├── Startup.cs                     # The Startup files with middleware and routing
  ├── appsettings.Development.json   # A file to store settings variables for development
  ├── appsettings.json               # A file to store settings variables for production
- ├── aspnetcorestarter.csproj       # csproj file with NuGet references
  ├── bower.json                     # The DevDependencies - JS libraries
- ├── bundleconfig.json              # The project build definition
- └── readme.md                      # Project Readme file
+ └── bundleconfig.json              # The project build definition
 ```
 
 ## Start the project
@@ -45,7 +44,29 @@ The AspNetCoreBoilerplate does not just contain a simple boilerplate without sty
 We have included a large number of minimalism components.
 
 These include:
-* 
+* Forms
+* Modals
+* Search
+* Cards
+* Table
+* Dropdowns
+
+## Sections
+Apart from the individual components, the template additionally include sections.
+These combine individual components to showcase elements you can directly implement on your website.
+
+These include:
+* Header Section
+* Navigation Section
+* Card section
+* Call to action Section
+* FAQ Section
+* Feature Section
+* Icon Sections
+* Image Sections
+* Options Section
+* Testimonials Section
+* Footer Section
 
 ## Bugs and Issues
 
@@ -54,8 +75,8 @@ Have a bug or an issue with this template? [Open a new issue](https://github.com
 ## Creator
 
 The template was created by and is maintained by:
-*@ **[Kristoffer Andreasen](https://medium.com/@kristoffer_andreasen)**
-*@ **[Jakub Svoboda](https://www.linkedin.com/in/jakubsvobodacz/)**
+* [Kristoffer Andreasen](https://medium.com/@kristoffer_andreasen)
+* [Jakub Svoboda](https://www.linkedin.com/in/jakubsvobodacz/)
 
 ## Copyright and License
 
