@@ -34,13 +34,6 @@ namespace AspNetCoreBoilerplate.Controllers
             return View();
         }
 
-        public IActionResult Product()
-        {
-            ViewData["Message"] = "Search.";
-
-            return View();
-        }
-
         public IActionResult Cards()
         {
             ViewData["Message"] = "Cards.";
