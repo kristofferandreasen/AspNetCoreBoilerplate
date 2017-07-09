@@ -299,7 +299,6 @@ h6 {
     color: #fff;
     text-shadow: none;
     text-transform: uppercase;
-    margin-bottom: 12px;
     transition-property: background-color,border-color,color,box-shadow,filter;
     transition-duration: .3s;
 }
@@ -315,7 +314,6 @@ h6 {
     color: #fff;
     text-shadow: none;
     text-transform: uppercase;
-    margin-bottom: 12px;
     transform: translateY(-1px);
     box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
     transition-property: background-color,border-color,color,box-shadow,filter;
@@ -672,6 +670,7 @@ h6 {
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    vertical-align: bottom
 }
 .simpleform button {
     line-height: 1.42857143;
@@ -687,6 +686,10 @@ h6 {
     font-size: 22px;
     letter-spacing: .2px;
     padding: 5px;
+}
+.minimal input[type=text]:focus {
+    border-bottom: 1px solid #E8E8E8;
+    outline: none;
 }
 /* ----------------------------------------------------------------------------------------------------------- */
 /*----------- Form Component */
